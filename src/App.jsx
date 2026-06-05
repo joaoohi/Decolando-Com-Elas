@@ -116,7 +116,7 @@ function App() {
             </h2>
 
             <p>
-              A Decolando Com Elas nasceu para apoiar mulheres que
+              A Decolando com elas nasceu para apoiar mulheres que
               desejam viajar com mais segurança, autonomia e confiança.
             </p>
 
@@ -369,7 +369,7 @@ function App() {
 
             <h3>YouTube</h3>
 
-            <p>Decolando Com Elas</p>
+            <p>Decolando com elas</p>
           </a>
 
           <a

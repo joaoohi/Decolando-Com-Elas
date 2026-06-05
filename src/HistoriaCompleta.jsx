@@ -102,7 +102,7 @@ function HistoriaCompleta() {
             <p>
               Como sempre fui muito determinada, escolhi seguir meu
               coração. Em agosto de 2024 nasceu oficialmente a
-              Decolando Com Elas.
+              Decolando com elas.
             </p>
 
           </div>
