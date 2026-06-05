@@ -355,6 +355,7 @@ function App() {
             <FaWhatsapp className="contato-icon" />
 
             <h3>WhatsApp</h3>
+            <p>Fale comigo diretamente</p>
           </a>
 
           <a
