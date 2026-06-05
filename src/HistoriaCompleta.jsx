@@ -14,7 +14,7 @@ function HistoriaCompleta() {
         <h1>Minha História</h1>
 
         <p>
-          A trajetória por trás da Decolando Com Elas.
+          A trajetória por trás da Decolando com elas.
         </p>
       </div>
 
