@@ -1287,3 +1287,17 @@ body {
     font-size: 16px;
   }
 }
+
+@media (max-width: 768px) {
+
+  .contato-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .contato-card p {
+    font-size: 1rem;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+}
