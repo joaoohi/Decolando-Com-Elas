@@ -5,6 +5,8 @@ import sobremim from './assets/sobremim.png'
 import sobreadecolando from './assets/sobreadecolando.png'
 import vidaderainha from './assets/vidaderainha.png'
 import logoVidaRainha from './assets/logovidaderainha.png'
+import { FaBars, FaTimes } from "react-icons/fa";
+import { useState } from "react";
 import {
   FaInstagram,
   FaLinkedin,
@@ -13,21 +15,43 @@ import {
 } from "react-icons/fa";
 
 function App() {
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <>
       <header className="navbar">
+
         <div className="logo">
           <img src={logo} alt="Decolando Com Elas" />
         </div>
 
-        <nav className="nav-links">
-          <a href="#aboutme">Sobre mim</a>
-          <a href="#aboutdecolando">Sobre a Decolando</a>
-          <a href="#confiar">Por que confiar em mim? </a>
-          <a href="#servicos">Serviços</a>
-          {/* <a href="#infoprodutos">Infoprodutos</a> */}
-          <a href="#vida-rainha">Sobre a Vida de Rainha</a>
-          <a href="#contatos">Contatos</a>
+        <button
+          className="menu-btn"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? <FaTimes /> : <FaBars />}
+        </button>
+
+        <nav className={`nav-links ${menuOpen ? "active" : ""}`}>
+          <a href="#aboutme" onClick={() => setMenuOpen(false)}>
+            Sobre mim
+          </a>
+          <a href="#aboutdecolando" onClick={() => setMenuOpen(false)}>
+            Sobre a Decolando
+          </a>
+          <a href="#confiar" onClick={() => setMenuOpen(false)}>
+            Por que confiar em mim?
+          </a>
+          <a href="#servicos" onClick={() => setMenuOpen(false)}>
+            Serviços
+          </a>
+          <a href="#vida-rainha" onClick={() => setMenuOpen(false)}>
+            Vida de Rainha
+          </a>
+          <a href="#contatos" onClick={() => setMenuOpen(false)}>
+            Contatos
+          </a>
         </nav>
 
       </header>

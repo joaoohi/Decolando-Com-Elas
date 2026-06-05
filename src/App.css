@@ -990,3 +990,300 @@ body {
 
   display: block;
 }
+
+/* ================================= */
+/* MOBILE */
+/* ================================= */
+
+@media screen and (max-width: 768px) {
+
+  /* NAVBAR */
+
+  .navbar {
+    position: relative;
+    height: auto;
+    padding: 15px;
+    flex-direction: column;
+  }
+
+  .logo img {
+    height: 80px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 15px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  /* HERO */
+
+  .hero {
+    min-height: auto;
+    padding: 80px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2.3rem;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  /* SEÇÕES */
+
+  .sobre-mim,
+  .sobre-decolando,
+  .confianca,
+  .servicos,
+  .vida-rainha,
+  .contatos {
+    padding: 80px 20px;
+  }
+
+  /* SOBRE MIM */
+
+  .sobre-container {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .sobre-foto {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    aspect-ratio: 4/5;
+  }
+
+  .sobre-texto h2 {
+    font-size: 2rem;
+  }
+
+  .sobre-texto p {
+    font-size: 1rem;
+  }
+
+  /* DECOLANDO */
+
+  .decolando-container {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .decolando-texto h2 {
+    font-size: 2rem;
+  }
+
+  .decolando-card {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    aspect-ratio: 4/5;
+  }
+
+  /* CONFIANÇA */
+
+  .confianca-header h2 {
+    font-size: 2rem;
+  }
+
+  .confianca-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .confianca-card {
+    padding: 25px;
+  }
+
+  /* SERVIÇOS */
+
+  .servicos-header h2 {
+    font-size: 2rem;
+  }
+
+  .servicos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* VIDA DE RAINHA */
+
+  .vida-rainha-container {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .vida-rainha-logo {
+    width: 120px;
+    margin-bottom: 20px;
+  }
+
+  .vida-rainha-foto {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    aspect-ratio: 4/5;
+  }
+
+  .vida-rainha-texto h2 {
+    font-size: 2rem;
+  }
+
+  .vida-rainha-texto p {
+    font-size: 1rem;
+  }
+
+  /* CONTATOS */
+
+  .contatos-header h2 {
+    font-size: 2rem;
+  }
+
+  .contatos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contato-card {
+    padding: 25px;
+  }
+
+  /* BOTÕES */
+
+  .btn-loja,
+  .btn-historia {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* ================================= */
+/* HISTÓRIA COMPLETA MOBILE */
+/* ================================= */
+
+@media screen and (max-width: 768px) {
+
+  .historia-hero {
+    padding: 80px 20px;
+  }
+
+  .historia-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .historia-container {
+    padding: 60px 20px;
+  }
+
+  .historia-bloco,
+  .historia-bloco.reverse {
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 80px;
+  }
+
+  .historia-texto {
+    text-align: center;
+  }
+
+  .historia-texto h2 {
+    font-size: 1.8rem;
+  }
+
+  .historia-texto p {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .historia-foto {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    aspect-ratio: 4/5;
+  }
+}
+
+/* ========================= */
+/* MENU HAMBURGUER */
+/* ========================= */
+
+.menu-btn {
+  display: none;
+
+  background: none;
+  border: none;
+
+  font-size: 1.8rem;
+
+  color: #FE0168;
+
+  cursor: pointer;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 20px;
+  }
+
+  .logo img {
+    height: 70px;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+
+    background: white;
+
+    flex-direction: column;
+
+    gap: 0;
+
+    max-height: 0;
+
+    overflow: hidden;
+
+    transition: all 0.3s ease;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  }
+
+  .nav-links.active {
+    max-height: 500px;
+    padding: 20px 0;
+  }
+
+  .nav-links a {
+    width: 100%;
+
+    text-align: center;
+
+    padding: 15px;
+
+    font-size: 16px;
+  }
+}
