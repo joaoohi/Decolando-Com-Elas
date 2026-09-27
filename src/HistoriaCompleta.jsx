@@ -34,7 +34,7 @@ function HistoriaCompleta() {
             </p>
 
             <p>
-              Tenho 28 anos, moro em São Paulo (SP) e sou empresária.
+              Tenho 29 anos, moro em São Paulo (SP) e sou empresária.
               Embora eu também crie conteúdos, principalmente de viagem,
               não me considero uma influenciadora, me considero mais uma
               mentora.
